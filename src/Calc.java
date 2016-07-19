@@ -6,6 +6,8 @@ import java.awt.event.ActionListener;
 public class Calc extends JFrame{
     Calc() {
         setBounds(500, 500, 300, 300);
+        setResizable(true);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
         add(display, BorderLayout.NORTH);
         add(buttonPanel, BorderLayout.CENTER);
